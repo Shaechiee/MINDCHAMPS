@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=portal.html?view=classes">
+  <script>window.location.replace("portal.html?view=classes");</script>
+  <title>MindChamps – Class List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="class.css">
+</head>
+<body class="page-student">
+
+  <!-- Red top band with white pill navbar -->
+  <header class="app-top">
+    <nav class="app-nav" aria-label="Main">
+      <a class="logo logo-dark" href="main.html" aria-label="MindChamps home">
+        <span class="logo-mind">M&#305;nd</span><span class="logo-champs">Champs</span>
+      </a>
+      <ul class="app-links">
+        <li><a href="main.html">Dashboard</a></li>
+        <li><a href="class.html">Students</a></li>
+        <li><a href="courses.html" class="is-active">Courses</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+      <a class="user-chip" href="index.html" title="Sign out">
+        <span class="user-avatar">JC</span><span class="user-name">Jo Cas</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="app-body" style="flex-direction: column;">
+    <main class="content" style="padding: 1.5rem 2.5rem;">
+      <h2 class="table-title" style="margin-top: 0; margin-bottom: 1rem;">Class List</h2>
+      <section class="card" style="border-radius: 12px;">
+        <div class="card-gold-banner"></div>
+
+        <div class="card-body">
+          <div class="class-list-header-bar">
+            <span style="font-weight: 600; font-size: .85rem; color: #333;">CLASSES</span>
+            <span style="font-size: .9rem; cursor: pointer;">📋</span>
+          </div>
+
+          <div class="class-list-controls">
+            <div class="class-btn-group">
+              <button class="btn-action-tab">Courses</button>
+              <button class="btn-action-tab">View Archived</button>
+            </div>
+            <div class="search-box-wrap">
+              <input type="text" class="search-box-input" placeholder="">
+              <span class="search-icon">🔍</span>
+            </div>
+          </div>
+
+          <div class="class-table-container">
+            <table class="class-table">
+              <thead>
+                <tr>
+                  <th>CLASSES</th>
+                  <th>STUDENT COUNT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

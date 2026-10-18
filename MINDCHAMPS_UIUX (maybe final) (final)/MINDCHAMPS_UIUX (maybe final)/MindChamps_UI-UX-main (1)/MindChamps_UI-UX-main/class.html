@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=portal.html?view=create-class">
+  <script>window.location.replace("portal.html?view=create-class");</script>
+  <title>MindChamps – Create Class</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="student.css">
+</head>
+<body class="page-student">
+
+  <!-- Red top band with white pill navbar -->
+  <header class="app-top">
+    <nav class="app-nav" aria-label="Main">
+      <a class="logo logo-dark" href="main.html" aria-label="MindChamps home">
+        <span class="logo-mind">M&#305;nd</span><span class="logo-champs">Champs</span>
+      </a>
+      <ul class="app-links">
+        <li><a href="main.html">Dashboard</a></li>
+        <li><a href="class.html" class="is-active">Students</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+      <a class="user-chip" href="index.html" title="Sign out">
+        <span class="user-avatar">JC</span><span class="user-name">Jo Cas</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="app-body">
+
+    <!-- Blue sidebar -->
+    <aside class="side" aria-label="Student sections">
+      <a href="class.html" class="side-link is-active" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></svg>
+        Student Profile
+      </a>
+      <a href="#" class="side-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5Z"/><path d="M12 6.5v13"/></svg>
+        Academic Record
+      </a>
+      <a href="#" class="side-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+        Attendance
+      </a>
+      <a href="#" class="side-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10.5h18M7 15h3"/></svg>
+        Financials
+      </a>
+      <a href="#" class="side-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/></svg>
+        Account Settings
+      </a>
+    </aside>
+
+    <!-- Gray content area with white card -->
+    <main class="content">
+      <section class="card" aria-labelledby="details-title">
+        <div class="card-gold-banner"></div>
+
+        <div class="card-body">
+          <div class="step-container">
+            <div class="step-box-active">
+              <div class="step-title">Step 1: Create Class</div>
+              <div class="step-subtitle">Create a Class</div>
+            </div>
+            <div class="step-box-inactive">
+              <div class="step-title">Step 2: Students</div>
+              <div class="step-subtitle">Add Students</div>
+            </div>
+          </div>
+
+          <div class="create-class-wrapper">
+            <form action="courses.html" method="get" class="create-class-form">
+              <input type="text" required class="create-class-input" placeholder="Enter class name...">
+              <button type="submit" class="btn-create-class">Create Class</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

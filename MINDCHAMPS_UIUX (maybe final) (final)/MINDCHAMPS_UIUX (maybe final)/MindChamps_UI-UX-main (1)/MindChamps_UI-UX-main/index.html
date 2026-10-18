@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=login.html">
+  <script>window.location.replace("login.html");</script>
+  <title>MindChamps – Sign in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-signin">
+
+  <nav class="topnav" aria-label="Main">
+    <a href="main.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="index.html">Signin</a>
+  </nav>
+
+  <main class="stage">
+    <div class="ladybug">
+
+      <!-- Ladybug artwork -->
+      <svg class="ladybug-art" viewBox="0 0 856 420" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+        
+        <!-- antennae -->
+        <path d="M346 36 C350 8 402 2 424 42" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+        <path d="M530 36 C526 8 474 2 452 42" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+        <ellipse cx="346" cy="37" rx="11" ry="8" fill="#000"/>
+        <ellipse cx="530" cy="37" rx="11" ry="8" fill="#000"/>
+
+        <!-- head -->
+        <path d="M273 150 A155 110 0 0 1 583 150 Z" fill="#000"/>
+
+        <!-- body -->
+        <path d="M0 420 A428 293 0 0 1 856 420 Z" fill="#7d1418"/>
+
+        <!-- centre triangle -->
+        <polygon points="428,127 248,420 608,420" fill="#660509"/>
+        <polygon points="428,127 428,420 608,420" fill="#5a0408"/>
+
+        <!-- spots -->
+        <g fill="#000">
+          <ellipse cx="139" cy="260" rx="31" ry="24"/>
+          <ellipse cx="213" cy="333" rx="31" ry="24"/>
+          <ellipse cx="50"  cy="367" rx="31" ry="24"/>
+          <ellipse cx="302" cy="242" rx="31" ry="24"/>
+          <ellipse cx="555" cy="242" rx="31" ry="24"/>
+          <ellipse cx="714" cy="260" rx="31" ry="24"/>
+          <ellipse cx="651" cy="339" rx="31" ry="24"/>
+          <ellipse cx="808" cy="371" rx="31" ry="24"/>
+        </g>
+      </svg>
+
+      <!-- Sign-in form on top of the ladybug -->
+      <div class="signin">
+        <div class="logo" role="img" aria-label="MindChamps">
+          <span class="logo-mind">M&#305;nd</span><span class="logo-champs">Champs</span>
+          <small class="logo-tag">Discover the MindChampion in You</small>
+        </div>
+
+        <h1 class="signin-title">SIGN IN</h1>
+
+        <form class="signin-form" action="main.html" method="get">
+          <label class="sr-only" for="first">First name</label>
+          <input id="first" name="first" type="text" placeholder="Enter your First Name" autocomplete="given-name" required>
+
+          <label class="sr-only" for="last">Last name</label>
+          <input id="last" name="last" type="text" placeholder="Enter your Last Name" autocomplete="family-name" required>
+
+          <label class="sr-only" for="pw">Password</label>
+          <input id="pw" name="pw" type="password" placeholder="Password" autocomplete="new-password" required>
+
+          <button type="submit" class="btn-create">CREATE ACCOUNT</button>
+        </form>
+
+        <div class="or"><span>OR SIGN IN WITH</span></div>
+        <div class="social">
+          <a href="main.html" class="pill" aria-label="Sign in with Google"></a>
+          <a href="main.html" class="pill" aria-label="Sign in with Facebook"></a>
+          <a href="main.html" class="pill" aria-label="Sign in with Apple"></a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
